@@ -1,0 +1,9 @@
+---
+title: About
+---
+
+This [Quarto Website](https://quarto.org/docs/websites/) shows how the [Posit
+Connect Server API](https://docs.posit.co/connect/api/) can combine with
+[Quarto Listings](https://quarto.org/docs/websites/website-listings.html) to
+create dashboards that highlight your content.
+

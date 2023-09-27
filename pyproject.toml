@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[tool.setuptools.packages.find]
+include = ["connectwidgets"]
+
+[tool.pytest.ini_options]
+markers = []
+testpaths = ["connectwidgets/tests"]
+
+[project]
+name = "connectwidgets"
+authors = [{name="E. David Aja", email="david@rstudio.com"}]
+license.file = "LICENSE"
+description = "MODIFY ME WITH DESCRIPTION"
+readme = "README.md"
+keywords = ["documentation", "quarto"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+dynamic = ["version"]
+requires-python = ">=3.8"
+dependencies = [
+    "pyyaml", "requests",
+]
+
+[project.urls]
+# homepage = "https://machow.github.io/quartodoc"
+# repository = "https://github.com/machow/quartodoc"
+# ci = "https://github.com/machow/quartodoc/actions"
+
+
+[project.optional-dependencies]
+dev = ["pytest", "jupyterlab", "jupytext", "syrupy", "pre-commit"]
